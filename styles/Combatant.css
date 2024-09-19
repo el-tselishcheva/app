@@ -1,0 +1,152 @@
+.Combatant {
+  width: 51px;
+  height: 13px;
+  background: url("../images/items/combatant-bar.png") no-repeat no-repeat;
+  position: absolute;
+}
+
+.Battle .Combatant {
+  transform: scale(2);
+  transition: opacity 0.4s;
+}
+
+.Battle .Combatant[data-active="false"] {
+  opacity: 0;
+}
+
+.Battle .Combatant[data-active="true"] {
+  opacity: 1;
+}
+
+.Combatant[data-team="player"] {
+  left: 50px;
+  top: 53px;
+}
+
+.Combatant[data-team="enemy"] {
+  top: 11px;
+  right: 65px;
+}
+
+.Combatant_character_crop {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: 22px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.Combatant_character {
+  display: block;
+  position: absolute;
+  transform: scale(0.8);
+  top: -25px;
+  left: -23px;
+}
+
+.Battle .Combatant_character_crop {
+  display: none;
+}
+
+.Combatant_name {
+  position: absolute;
+  left: 0px;
+  top: -8px;
+  white-space: nowrap;
+  background: var(--menu-font-color);
+  color: black;
+  font-size: 3.5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0;
+}
+
+.Combatant_type {
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 11px;
+  height: 11px;
+}
+
+.Combatant_life-container {
+  position: absolute;
+  left: 15px;
+  top: 4px;
+  width: 20px;
+  height: 2px;
+}
+
+.Combatant_life-container > rect {
+  transition: width 0.2s;
+}
+
+.Combatant_xp-container {
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  width: 20px;
+  height: 2px;
+}
+
+.Combatant_level {
+  position: absolute;
+  font-size: 5px;
+  right: 5px;
+  top: 2px;
+  width: 9px;
+  height: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: gray;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.Combatant_status {
+  position: absolute;
+  font-size: 3px;
+  top: -3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  margin: 0;
+}
+
+.Combatant_status[data-status="saucy"] {
+  color: red;
+}
+
+.Combatant_status[data-status="distracted"] {
+  background: #582a79;
+}
+
+.Weapon {
+  position: absolute;
+  transform: scale(2);
+  transition: opacity 0.4s, transform 0.4s;
+  background: url(../images/items/shadow.png) no-repeat no-repeat;
+}
+
+.Weapon[data-team="player"] {
+  bottom: 80px;
+  left: 80px;
+}
+
+.Weapon[data-team="enemy"] {
+  top: 60px;
+  right: 90px;
+}
+
+.Weapon[data-active="false"] {
+  opacity: 0;
+  transform: translate3d(0,16px,0) scale(2);
+}
+
+.Weapon[data-active="true"] {
+  opacity: 1;
+  transform: translate3d(0,0,0) scale(2);
+}

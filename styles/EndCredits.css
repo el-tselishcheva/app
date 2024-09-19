@@ -1,0 +1,15 @@
+.EndCredits {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+}
+
+.EndCredits_img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    image-rendering: pixelated;
+}

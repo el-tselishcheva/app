@@ -1,0 +1,52 @@
+.TextMessage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  padding: 8px;
+  background: var(--menu-background);
+  color: var(--menu-font-color);
+}
+
+.Speaker_name {
+  position: absolute;
+  left: 6px;
+  top: -8px;
+  white-space: nowrap;
+  background: var(--menu-font-color);
+  color: black;
+  font-size: 7px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0;
+}
+
+.TextMessage_p {
+  margin: 0;
+  font-size: 7px;
+  line-height: 10px;
+}
+
+.TextMessage span {
+  opacity: 0;
+}
+
+.TextMessage span.revealed {
+  opacity: 1;
+}
+
+.TextMessage_button {
+  margin: 0;
+  font-size: 5px;
+  padding: 3px;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  font-family: 'Press Start 2P', cursive;
+  color: gray;
+  cursor: pointer;
+  position: absolute;
+  right: 3px;
+  bottom: 2px;
+}

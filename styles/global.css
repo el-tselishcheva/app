@@ -1,0 +1,37 @@
+:root {
+  --border-color: white;
+  --dialog-background: black;
+
+  --menu-background: black;
+  --menu-border-color: white;
+  --menu-font-color: white;
+  --menu-selected-background: rgba(125, 125, 125, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.game-container {
+  background-color: black;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  transform: scale(2.5) translateY(43%);
+}
+
+.game-container canvas {
+  position: absolute;
+  image-rendering: pixelated;
+}
